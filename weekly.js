@@ -157,7 +157,7 @@ const nextReview = async (prompt, stepHeader) => {
 }
 
 const reviewSomeday = async (prompt) => {
-  task('list +someday')
+  task('list +joskus')
   await pause(prompt)
 }
 
@@ -203,7 +203,7 @@ const stepDefinitions = {
     description: 'This can often trigger ideas for new +in items',
     run: pause
   },
-  'Review +someday list': {
+  'Review +joskus list': {
     description: 'Is there anything else that should be on here? Is it time to activate one of these projects?',
     run: reviewSomeday
   },
@@ -220,7 +220,7 @@ const stepOrder = [
   '+next review',
   'Process e-mail',
   'Check last two weeks and next two weeks in calendars',
-  'Review +someday list',
+  'Review +joskus list',
   'Process +in'
 ]
 
