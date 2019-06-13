@@ -189,10 +189,10 @@ const stepDefinitions = {
   * Mark any done tasks as such`,
     run: projectReview
   },
-  '+next review': {
-    description: 'Make sure all projects have exactly one +next item',
-    run: nextReview
-  },
+  //'+next review': {
+    //description: 'Make sure all projects have exactly one +next item',
+    //run: nextReview
+  //},
   'Process e-mail': {
     description: `Ensure all e-mails in your inbox are handled. This can mean
   * archiving them and adding an entry (+in) to Taskwarrior on another terminal
@@ -217,7 +217,7 @@ const stepDefinitions = {
 const stepOrder = [
   'Mini mind sweep',
   'Project review',
-  '+next review',
+  //'+next review',
   'Process e-mail',
   'Check last two weeks and next two weeks in calendars',
   'Review +joskus list',
